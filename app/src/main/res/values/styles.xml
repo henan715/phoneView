@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="ProjectTheme" parent="AppTheme">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+
+        <item name="android:statusBarColor" tools:targetApi="21">@color/my_blue</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/my_black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--是否开启导航图标旋转效果-->
+        <item name="spinBars">true</item>
+        <item name="android:color">@android:color/white</item>
+    </style>
+
+    <style name="DrawerTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/my_black</item>
+    </style>
+
+</resources>
